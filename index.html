@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREE French A1 Starter Kit</title>
+    <meta name="description" content="Master essential French phrases with our premium A1 starter kit. Audio pronunciation, interactive quiz, and native speaker guidance.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Section 1: Hero -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">FREE French A1 Starter Kit</h1>
+                <p class="hero-subtitle">Master 10 essential phrases in 5 minutes. Audio pronunciation included.</p>
+                <a href="https://tally.so/r/q4OL27" class="cta-button" target="_blank">
+                    <i class="fas fa-play"></i>
+                    Start Learning
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Phrase Preview -->
+    <section id="phrases" class="phrases">
+        <div class="container">
+            <div class="section-header">
+                <h2>Essential French Phrases</h2>
+                <p>Swipe through the phrases you'll master today</p>
+            </div>
+            
+            <div class="phrases-container">
+                <div class="phrases-scroll" id="phrasesScroll">
+                    <!-- Phrase cards will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="view-full">
+                <a href="https://www.canva.com/design/DAHExVPQ7_w/YqLbirOW4xBxGZIhmVMIew/edit?utm_content=DAHExVPQ7_w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="view-full-btn" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    View Full Presentation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Audio -->
+    <section id="audio" class="audio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perfect Your Pronunciation</h2>
+                <p>Listen to native speakers and practice at your own pace</p>
+            </div>
+            
+            <div class="audio-controls">
+                <div class="speed-controls">
+                    <label>Speed:</label>
+                    <div class="speed-buttons">
+                        <button class="speed-btn active" data-speed="0.75">0.75×</button>
+                        <button class="speed-btn" data-speed="1">1×</button>
+                        <button class="speed-btn" data-speed="1.25">1.25×</button>
+                    </div>
+                </div>
+                
+                <button class="play-all-btn" id="playAllBtn">
+                    <i class="fas fa-play"></i>
+                    Play All
+                </button>
+            </div>
+            
+            <div class="audio-cards" id="audioCards">
+                <!-- Audio cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Quiz Intro -->
+    <section id="quiz-intro" class="quiz-intro">
+        <div class="container">
+            <div class="quiz-intro-content">
+                <h2>Ready to Test Your Knowledge?</h2>
+                <p>Take our interactive quiz and see how well you've learned these essential phrases</p>
+                <button class="cta-button" onclick="startQuiz()">
+                    <i class="fas fa-brain"></i>
+                    Start Quiz
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Quiz -->
+    <section id="quiz" class="quiz" style="display: none;">
+        <div class="container">
+            <div class="quiz-header">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="quiz-info">
+                    <span class="question-number" id="questionNumber">Question 1 of 10</span>
+                    <div class="stars" id="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quiz-content">
+                <div class="question-card" id="questionCard">
+                    <h3 class="question-text" id="questionText"></h3>
+                    <div class="answers-grid" id="answersGrid"></div>
+                    <div class="feedback" id="feedback"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Section 7: Results & Monetization -->
+    <section id="results" class="results" style="display: none;">
+        <div class="container">
+            <div class="results-content">
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span class="score-number" id="scoreNumber">0/10</span>
+                        <span class="score-label">Your Score</span>
+                    </div>
+                    <div class="level-badge" id="levelBadge">
+                        <i class="fas fa-medal"></i>
+                        <span id="levelText">Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="cta-section">
+                    <h3>Ready to Speak French Faster?</h3>
+                    <p>Take your French to the next level with personalized guidance</p>
+                    
+                    <div class="cta-buttons">
+                        <a href="https://preply.com/en/learn/french" class="cta-primary" target="_blank">
+                            <i class="fas fa-user-graduate"></i>
+                            Book Native French Tutor
+                        </a>
+                        <a href="https://www.duolingo.com/course/fr/en/Learn-French" class="cta-secondary" target="_blank">
+                            <i class="fas fa-mobile-alt"></i>
+                            Continue on Duolingo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
