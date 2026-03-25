@@ -374,8 +374,6 @@ class FrenchLearningApp {
         levelElement.textContent = level;
         levelBadge.innerHTML = `<i class="fas ${levelIcon}"></i> <span>${level}</span>`;
         
-        // Open Tally form in new tab for email collection
-        window.open('https://tally.so/r/q4OL27', '_blank');
     }
     
 
